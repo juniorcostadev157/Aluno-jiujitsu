@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".activitys.FormCadastro.FormCadastro">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/textoCadastro"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradiente"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editNomeCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/container_arrendondado_para_edit_text"
+                android:ems="10"
+                android:hint="@string/nome"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/card_drawer_bottom_label_disabled"
+                android:textCursorDrawable="@color/vermelho_forte" />
+
+            <EditText
+                android:id="@+id/editEmailCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/container_arrendondado_para_edit_text"
+                android:ems="10"
+                android:hint="@string/loginEmail"
+                android:inputType="text|textEmailAddress"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/card_drawer_bottom_label_disabled"
+                android:textCursorDrawable="@color/vermelho_forte" />
+
+            <EditText
+                android:id="@+id/editSenhaCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/container_arrendondado_para_edit_text"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:hint="@string/loginSenha"
+                android:inputType="number|numberPassword"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/card_drawer_bottom_label_disabled"
+                android:textCursorDrawable="@color/vermelho_forte" />
+
+            <AutoCompleteTextView
+                android:id="@+id/editAutoIdade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/container_arrendondado_para_edit_text"
+                android:editable="false"
+                android:hint="@string/selecione_idade"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/card_drawer_bottom_label_disabled" />
+
+            <AutoCompleteTextView
+                android:id="@+id/editFaixaCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/container_arrendondado_para_edit_text"
+                android:editable="false"
+                android:hint="@string/selecione_cor_faixa"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/card_drawer_bottom_label_disabled" />
+
+            <AutoCompleteTextView
+                android:id="@+id/editGrauCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/container_arrendondado_para_edit_text"
+                android:editable="false"
+                android:hint="@string/selecione_graus"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/card_drawer_bottom_label_disabled" />
+
+            <EditText
+                android:id="@+id/editRestricaoMedica"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/container_arrendondado_para_edit_text"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:hint="@string/restricao_medica"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/card_drawer_bottom_label_disabled"
+                android:textCursorDrawable="@color/vermelho_forte" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/gradiente_botao"
+                android:backgroundTint="@color/black"
+                android:padding="15dp"
+                android:text="@string/botaoCadastrar"
+                android:textColor="@color/white"
+                android:textColorHint="@color/card_drawer_bottom_label_disabled"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/containerForm" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

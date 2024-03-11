@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activitys.FormEditarPerfil.FormEditarPerfil">
+
+
+    <View
+        android:id="@+id/containerPerfilAluno"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:background="@drawable/gradiente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageAtualizarPerfil"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/circular_imagem_perfil"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editAtualizarNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="none"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/card_drawer_bottom_label_disabled"
+        android:textCursorDrawable="@color/vermelho_forte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerPerfilAluno" />
+
+    <AutoCompleteTextView
+        android:id="@+id/editAtualizarIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/selecione_idade"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/card_drawer_bottom_label_disabled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAtualizarNome" />
+
+    <EditText
+        android:id="@+id/editAtualizarRestricaoMedica"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="@string/restricao_medica"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/card_drawer_bottom_label_disabled"
+        android:textCursorDrawable="@color/vermelho_forte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAtualizarIdade" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAtualizarDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/gradiente_botao"
+        android:backgroundTint="@color/black"
+        android:padding="15dp"
+        android:text="Salvar Alterações"
+        android:textColor="@color/white"
+        android:textColorHint="@color/card_drawer_bottom_label_disabled"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAtualizarRestricaoMedica" />
+
+    <ImageView
+        android:id="@+id/imageButtonGaleria"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAtualizarPerfil"
+        app:layout_constraintEnd_toEndOf="@+id/imageAtualizarPerfil"
+        app:srcCompat="@drawable/ic_galera" />
+
+    <ImageView
+        android:id="@+id/imageButtonCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAtualizarPerfil"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonGaleria"
+        app:layout_constraintStart_toStartOf="@+id/imageAtualizarPerfil"
+        app:srcCompat="@drawable/ic_camera" />
+</androidx.constraintlayout.widget.ConstraintLayout>

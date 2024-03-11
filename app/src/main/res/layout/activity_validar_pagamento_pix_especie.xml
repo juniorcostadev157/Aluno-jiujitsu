@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activitys.ValidarPagamentoPix.ValidarPagamentoPixEspecie">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonEnviarComprovante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/gradiente_botao"
+        android:drawableStart="@drawable/ic_pix"
+        android:drawableEnd="@drawable/ic_pix"
+        android:drawableTint="#EEE5E5"
+        android:padding="10dp"
+        android:text="Enviar Comprovante"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageComprovante" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/borda_mensalidade"
+        android:padding="10dp"
+        android:text="@string/TextoValidarPagamento"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageComprovante"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/container_arrendondado" />
+
+    <ImageView
+        android:id="@+id/imageButtonGaleriaValidacao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageComprovante"
+        app:layout_constraintEnd_toEndOf="@+id/imageComprovante"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="@+id/imageComprovante"
+        app:srcCompat="@drawable/ic_galera" />
+
+    <ImageView
+        android:id="@+id/imageButtonCameraValidao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageComprovante"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonGaleria"
+        app:layout_constraintStart_toStartOf="@+id/imageComprovante"
+        app:srcCompat="@drawable/ic_camera" />
+</androidx.constraintlayout.widget.ConstraintLayout>

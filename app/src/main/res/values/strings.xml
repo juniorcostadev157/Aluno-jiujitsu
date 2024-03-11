@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TD BJJ\nAluno</string>
+    <string name="nome_logo_inicial"><font color="#F10808">Login</font> Aluno</string>
+    <string name="carregando_comprovante"><font color="#F10808">Enviando</font> Comprovante</string>
+    <string name="carregando_foto"><font color="#F10808">Carregando</font> Foto</string>
+    <string name="cadastrar">Novo por aqui ? Cadastre-se</string>
+    <string name="loginEmail">Digite seu email</string>
+    <string name="loginSenha">Digite sua senha</string>
+    <string name="nome">Digite seu nome</string>
+    <string name="botaoLogin">Entrar</string>
+    <string name="botaoCadastrar">Cadastrar</string>
+    <string name="mes">02</string>
+    <string name="ano">2024</string>
+    <string name="TextoValidarPagamento">Se você fez o pagamento em pix ou especie , por favor anexe fotos do comprovante ou do recibo de pagamento para que a mensalidade suba para a aba mensalidade paga</string>
+    <string name="mensalidade">Mensalidade</string>
+    <string name="aviso_mensalidade_detalhes">Atenção ao mês de pagamento da mensalidade , se certifique que está pagando o mês correto</string>
+    <string name="botaoEditarPerfil">Editar</string>
+    <string name="selecione_cor_faixa">Selecione a cor da faixa</string>
+    <string name="selecione_graus">Selecione a quantidade de graus</string>
+    <string name="selecione_idade">Selecione a idade</string>
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="restricao_medica">Informe aqui caso tenha restrições medicas</string>
+    <string name="textoCadastro"><font color="#F10808">Cadastro</font> - Oss</string>
+    <string name="textoCarregando">Carregando - O<font color="#F10808">ss</font></string>
+    <string name="texto_recuperar_senha">Digite seu email abaixo e será enviado um link no seu email para recuperar senha</string>
+    <string name="msg_token_fmt">Token FCM: %1$s</string>
+</resources>

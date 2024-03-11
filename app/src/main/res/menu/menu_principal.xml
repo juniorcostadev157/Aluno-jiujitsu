@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title=""
+          android:icon="@drawable/ic_menu_jiu"
+          app:showAsAction="always">
+        <menu>
+
+            <item
+                android:id="@+id/perfil"
+                android:title="Perfil"
+                android:icon="@drawable/ic_perfil"
+                app:showAsAction="never"/>
+
+            <item android:id="@+id/mensalidade"
+                  android:title="Mensalidade"
+                  android:icon="@drawable/ic_mensalidade"
+                    app:showAsAction="never"
+                />
+            <item android:id="@+id/pagos"
+                android:title="Mensalidade Pagas"
+                android:icon="@drawable/ic_pagos"
+                app:showAsAction="never"/>
+            <item android:id="@+id/loja"
+                android:title="Loja"
+                android:icon="@drawable/ic_loja"
+                app:showAsAction="never"/>
+            <item android:id="@+id/pedidos"
+                android:title="Pedidos"
+                android:icon="@drawable/ic_pedidos"
+                app:showAsAction="never"/>
+            <item android:id="@+id/sair"
+                android:title="Sair"
+                android:icon="@drawable/ic_sair"
+                app:showAsAction="never"
+                />
+
+        </menu>
+
+
+
+
+    </item>
+
+
+</menu>
